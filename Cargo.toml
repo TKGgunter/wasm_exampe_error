@@ -1,0 +1,34 @@
+[package]
+name = "paint"
+version = "0.1.0"
+authors = ["tgunter <thothgunter@live.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+js-sys = "0.3.46"
+wasm-bindgen = "0.2.69"
+
+[dependencies.web-sys]
+version = "0.3.4"
+features = [
+  'CanvasRenderingContext2d',
+  'CssStyleDeclaration',
+  'Document',
+  'Element',
+  'EventTarget',
+  'HtmlCanvasElement',
+  'HtmlElement',
+  'MouseEvent',
+  'Node',
+  'Window',
+  'EventListener',
+  'Event',
+  'Performance',
+  'PerformanceTiming',
+  'ImageData'
+]
